@@ -10,7 +10,7 @@ export default function Aboutpage() {
         <Layout title="About Me">
             <div className="min-h-screen p-9">
                 <Section className="rounded-lg bg-base-200/60">
-                    <div className="flex justify-center px-2 py-20 text-center text-neutral-content ">
+                    <div className="flex justify-center px-2 py-20 text-center">
                         <div className="max-w-md ">
                             <h1 className="mb-5 text-3xl font-bold">
                                 Hello there
