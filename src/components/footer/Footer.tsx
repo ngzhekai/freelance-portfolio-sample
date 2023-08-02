@@ -4,7 +4,7 @@ const Footer = () => {
             <div>
                 <p>
                     Copyright &copy; {new Date().getFullYear()} - All right
-                    reserved by zk
+                    reserved by ZheKai{" "}
                 </p>
             </div>
         </footer>

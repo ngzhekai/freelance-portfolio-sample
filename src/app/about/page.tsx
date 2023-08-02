@@ -8,9 +8,9 @@ const P = ({ children }: any) => {
 export default function Aboutpage() {
     return (
         <Layout title="About Me">
-            <div className="min-h-screen p-9">
+            <div className="min-h-screen px-5 py-16 md:px-12">
                 <Section className="rounded-lg bg-base-200/60">
-                    <div className="flex justify-center px-2 py-20 text-center">
+                    <div className="flex justify-center px-7 py-12 text-center">
                         <div className="max-w-md ">
                             <h1 className="mb-5 text-3xl font-bold">
                                 Hello there
