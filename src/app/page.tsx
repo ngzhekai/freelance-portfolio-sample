@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import thumbWhatIDo from "../../public/backend-sample.jpg";

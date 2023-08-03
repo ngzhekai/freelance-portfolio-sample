@@ -1,17 +1,25 @@
 const config = {
-    siteName: "Bryan Koh Homepage",
+    siteName: "Bryan Koh - Homepage",
     siteDescription: "Portfolio examples using the new app router in Nextjs",
-    author: "Ng Zhe Kai",
+    siteOwner: "Zhe Kai",
+    author: "Bryan Koh",
     nav: [
         {
-            name: 'Homepage',
-            path: '/',
+            id: 1,
+            title: "Home",
+            path: "/",
         },
         {
-            name: 'About',
-            path: '/about/'
+            id: 2,
+            title: "Blog",
+            path: "/blog",
         },
-    ]
+        {
+            id: 3,
+            title: "About Me",
+            path: "/about",
+        },
+    ],
 };
 
 export default config;

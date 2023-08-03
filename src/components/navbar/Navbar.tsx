@@ -1,24 +1,9 @@
 "use client";
 import { IoLogoGithub } from "react-icons/io5";
 import Link from "next/link";
+import config from "@/lib/config";
 
-const links = [
-    {
-        id: 1,
-        title: "Home",
-        url: "/",
-    },
-    {
-        id: 2,
-        title: "Blog",
-        url: "/blog",
-    },
-    {
-        id: 3,
-        title: "About Me",
-        url: "/about",
-    },   
-];
+/* update navbar list in @/lib/config */
 
 const Navbar = () => {
     return (
@@ -36,9 +21,9 @@ const Navbar = () => {
                 <div className="flex flex-1 justify-end">
                     <div className="navbar-center hidden md:flex">
                         <ul className="menu menu-horizontal px-2 text-base">
-                            {links.map((link) => (
+                            {config.nav.map((link) => (
                                 <li key={link.id}>
-                                    <Link href={link.url}>{link.title}</Link>
+                                    <Link href={link.path}>{link.title}</Link>
                                 </li>
                             ))}
                         </ul>
@@ -85,9 +70,9 @@ const Navbar = () => {
                             tabIndex={0}
                             className="dropdown-content menu rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
                         >
-                            {links.map((link) => (
+                            {config.nav.map((link) => (
                                 <li key={link.id}>
-                                    <Link href={link.url}>{link.title}</Link>
+                                    <Link href={link.path}>{link.title}</Link>
                                 </li>
                             ))}
                         </ul>

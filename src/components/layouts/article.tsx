@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -8,6 +7,7 @@ const variants = {
     enter: { opacity: 1, x: 0, y: 0 },
     exit: { opacity: 0, x: 0, y: 20 },
 };
+
 const Layout = ({ children, className, title }: any) => {
     return (
         <motion.div
@@ -30,4 +30,5 @@ const Layout = ({ children, className, title }: any) => {
     );
 };
 
-export default Layout;
+
+export default Layout

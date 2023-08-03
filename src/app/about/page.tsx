@@ -1,8 +1,15 @@
+// "use client";
 import Section from "@/components/Section";
 import Layout from "@/components/layouts/article";
+import { Metadata } from "next";
+import config from "@/lib/config";
 
 const P = ({ children }: any) => {
     return <p className="mb-5 text-justify text-sm">{children}</p>;
+};
+
+export const metadata: Metadata = {
+    title: `${config.nav.at(2)?.title} - ${config.author}`,
 };
 
 export default function Aboutpage() {
